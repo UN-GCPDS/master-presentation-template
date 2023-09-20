@@ -1,0 +1,269 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+
+\setbeamersize{text margin left=3mm,text margin right=3mm} 
+
+\usetheme{Oxygen}
+\usepackage{graphicx}
+\usepackage{hyperref}
+%\usepackage{movie15}
+\usepackage{textpos}
+\usepackage{fancybox}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{subfigure}
+%\usepackage{subcaption}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{amsmath,amssymb,amsfonts,amsbsy,dsfont}
+\usepackage{mathrsfs}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{array}
+%\usepackage[caption=false]{subfig}
+\usepackage{arydshln}
+\usepackage{breakcites}
+\usepackage{booktabs}
+
+\let\oldcite\cite % store the original \cite command
+\renewcommand{\cite}[1]{{\tiny\oldcite{#1}}}
+
+\usepackage{bm}
+\providecommand{\mat}[1]{{\bm{#1}}} 
+\providecommand{\ve}[1]{{\bm{#1}}} 
+
+
+\newcommand{\x}{\negthinspace\times\negthinspace}
+\usepackage{etoolbox}
+
+\DeclareUnicodeCharacter{2212}{-}
+
+
+\usepackage[nopar]{lipsum} 
+
+\newif\ifcomment
+\newcommand{\Com}{\par\footnotesize\itshape\commenttrue}
+
+\newenvironment{Itemize}
+ {%
+  \edef\Itemizecurrent{\the\font}%
+  \itemize
+  \preto{\item}{\ifcomment\par\Itemizecurrent\fi}%
+ }{%
+  \enditemize
+ }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%
+
+
+\title[Title | Author]{Title}
+
+
+\author{\normalsize{Author}\\ \scriptsize{email}}
+
+\institute{\includegraphics[width=0.15\textwidth]{EscudoUN.png}\\\scriptsize{
+Universidad Nacional de Colombia \\ Signal Processing and Recognition Group - SPRG
+\\
+Advisor: Andrés Marino Álvarez Meza, Ph.D.\\
+Co-advisor: César Germán Castellanos Domíguez, Ph.D.\\
+\vspace{-0.3cm}
+}}
+\date[]{\scriptsize{\today}}
+%%-------------------------------------------------------------------
+%% Options
+%%-------------------------------------------------------------------
+\setbeamercovered{dynamic}
+\setbeamertemplate{navigation symbols}{}
+
+
+
+\begin{document}
+
+{\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+\begin{frame}{}
+\vspace{-0.7cm}
+    \titlepage 
+\end{frame}
+}
+
+
+\frame
+{ \frametitle{Outline}
+{\small 
+  \tableofcontents[]}
+}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section[Motivation]{Motivation}
+
+\begin{frame}{Motivation general}
+    
+\end{frame}
+
+\begin{frame}{Motivation specific 1}
+    
+\end{frame}
+
+\begin{frame}{Motivation specific 2}
+    
+\end{frame}
+
+\begin{frame}{Research Group}
+    
+\end{frame}
+
+
+
+
+\section{Problem Statement}
+
+\begin{frame}{Issue \#1: ---}
+    
+\end{frame}
+
+
+\begin{frame}{Issue \#2: ---}
+    
+\end{frame}
+
+
+\begin{frame}{Issue \#3: ---}
+    
+\end{frame}
+
+
+\begin{frame}{Research Question}
+    
+\end{frame}
+
+
+\section{Literature Review}
+
+
+\begin{frame}{Issue \#1}
+    
+\end{frame}
+
+
+\begin{frame}{Issue \#2}
+    
+\end{frame}
+
+
+\begin{frame}{Issue \#3}
+    
+\end{frame}
+
+
+\section{Aims}
+
+\begin{frame}{General Aim}
+    
+\end{frame}
+
+\begin{frame}{Specific Aims}
+    
+\end{frame}
+
+
+\section{Methodology}
+
+\begin{frame}{Schema}
+    
+\end{frame}
+
+
+\begin{frame}{Aim \#1}
+    
+\end{frame}
+
+
+\begin{frame}{Aim \#2}
+    
+\end{frame}
+
+
+\begin{frame}{Aim \#3}
+    
+\end{frame}
+
+
+\section{Experimental Set-up}
+
+\begin{frame}{Databases}
+    
+\end{frame}
+
+
+\begin{frame}{Methods comparison}
+    
+\end{frame}
+
+
+\begin{frame}{Metrics}
+    
+\end{frame}
+
+
+\section{Results}
+
+\begin{frame}{Qualitative results}
+    
+\end{frame}
+
+
+\begin{frame}{Quantitative results}
+    
+\end{frame}
+
+
+\begin{frame}{Impact of the proyect}
+    
+\end{frame}
+
+\section{Conclusions}
+
+\begin{frame}{Conclusions}
+    
+\end{frame}
+
+
+\begin{frame}{Future Work}
+    
+\end{frame}
+
+
+\begin{frame}{Academic Discussion}
+    
+\end{frame}
+
+
+\begin{frame}{Acknowledgments}
+
+\begin{center}
+	{\Huge{\textbf{\textcolor[rgb]{0.00,0.00,1.00}{Thank you!}}}}\\
+	\vspace{0.1cm}
+	 Author\\ \scriptsize{email}
+\end{center}  
+
+
+\end{frame}
+
+\section{References}
+
+
+\end{document}
+
